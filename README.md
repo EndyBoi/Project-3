@@ -7,7 +7,7 @@ https://www.thecocktaildb.com/api.php
 https://github.com/evz/tacofancy-api
 https://github.com/jamesseanwright/ron-swanson-quotes
 ```
-~~https://streetfoodapp.com/api~~
+
 Notes: The idea to include the foodtruck was removed as the API was to small or out of date to be utilised for any positive result. 
 
 ## Building and running on localhost
