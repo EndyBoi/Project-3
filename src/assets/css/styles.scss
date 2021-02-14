@@ -1,0 +1,18 @@
+$bg: #fff !default;
+$soft-bg: #f1efef !default;
+$nav-bg: #f2f2f2 !default;
+$card-bg: #d7d9ff !default;
+
+$link-color: #760efa !default;
+$link-hover: #6402e1 !default;
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: $bg;
+}
+
+@import 'sass/_navbar.sass';
+@import 'sass/_cocktailcard.sass';

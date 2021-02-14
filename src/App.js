@@ -1,23 +1,21 @@
-
-import React from "react";
-import { hot } from 'react-hot-loader/root';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import { hot } from 'react-hot-loader/root'
+import { Switch, Route } from 'react-router-dom'
+import 'bootstrap'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import NavBar from './assets/components/NavBar'
+import CocktailCard from './assets/components/CocktailCard'
 
 class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-        <button type="button" class="btn btn-primary">
-          This is a bootstrap button
-        </button>
-      </>
-    );
-  }
+	render() {
+		const { name } = this.props
+		return (
+			<>
+				<NavBar />
+				<CocktailCard />
+			</>
+		)
+	}
 }
 
-export default hot(App);
+export default hot(App)
