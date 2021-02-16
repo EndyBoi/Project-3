@@ -7,7 +7,7 @@ const TacoCard = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://taco-randomizer.herokuapp.com/random/?full-taco=true')
+			.get('https://taco-randomizer.herokuapp.com/random/?full-taco=true')
 			.then((res) => {
 				newTaco(
 					'https://iron-cors-anywhere.herokuapp.com/' + res.data.base_layer.url
