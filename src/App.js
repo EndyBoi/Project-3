@@ -5,6 +5,7 @@ import 'bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './assets/components/NavBar'
 import CocktailCard from './assets/components/CocktailCard'
+import TacoCard from './assets/components/TacoCard'
 
 class App extends React.Component {
 	render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
 			<>
 				<NavBar />
 				<CocktailCard />
+				<TacoCard />
 			</>
 		)
 	}

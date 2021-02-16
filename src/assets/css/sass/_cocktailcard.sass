@@ -4,20 +4,30 @@
   align-items: center
   justify-content: center
   display: grid
-  grid-template-rows: 5vw 5vw 10vw
-  grid-gap: 1em
-  border-radius: 10px
-  margin: 0% 5% 0% 5%
-  border: 1px solid rgba(0, 0, 0, .6%)
+  border-radius: $border-px
+  margin: 0% 25% 0% 25%
+  padding: 2%
+  border: 1px solid rgba(0, 0, 0, .4%)
 
-.cc-title, .cc-image
+.cc-image
+  height: 200px
+  border-radius: 10px
+
+.cc-title, .cc-image, .cc-body,
   grid-column: 1 / span 2
   display: flex
-  justify-content: space-around
-
-  .cc-title
-
-.cc-1
-  display: flex
   justify-content: space-evenly
-  padding 25%
+  // border: 1px solid black
+
+.cc-table
+  margin-top: 5%
+  display: inline
+  justify-content: space-evenly
+  td
+    padding: 0
+
+.cc-body
+  width: 75%
+  padding-left: 20%
+  display: inline
+  justify-content: space-center
