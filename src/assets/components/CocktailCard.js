@@ -15,7 +15,9 @@ const CocktailCard = () => {
 
 	return (
 		<div className='card shadow'>
-			<div className='cc-title'>{drink.strDrink}</div>
+			<div className='cc-title'>
+				<h2>{drink.strDrink}</h2>
+			</div>
 			<div className='cc-title'>
 				<img
 					className='cc-image shadow'
@@ -88,8 +90,10 @@ const CocktailCard = () => {
 				</table>
 			</div>
 			<div className='cc-body'>
-				<h4>How to mix:</h4>
-				<p>{drink.strInstructions}</p>
+				<h4>Instructions:</h4>
+				<p>
+					{drink.strInstructions} and serve in a {drink.strGlass}.
+				</p>
 			</div>
 		</div>
 	)

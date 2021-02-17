@@ -15,7 +15,7 @@ const Ron = () => {
 
 	return (
 		<div className='card shadow ron'>
-			<h3>Ron Swanson says: {ron}</h3>
+			<h4>Ron Swanson says: {ron}</h4>
 		</div>
 	)
 }
