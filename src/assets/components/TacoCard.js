@@ -18,19 +18,17 @@ const TacoCard = () => {
 	function newTaco(taco) {
 		fetch(taco)
 			.then((response) => {
-				console.log('hello', response)
 				if (response.ok) return response.text()
 				else return Promise.reject("Didn't fetch text correctly!")
 			})
 			.then((text) => {
-				console.log(text)
 				setRecipe(text)
 			})
 			.catch((error) => console.error(error))
 	}
 
 	return (
-		<div className='tacoCard'>
+		<div className='card'>
 			<ReactMarkdown>{recipe}</ReactMarkdown>
 		</div>
 	)

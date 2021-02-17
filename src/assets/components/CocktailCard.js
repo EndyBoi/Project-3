@@ -14,7 +14,7 @@ const CocktailCard = () => {
 	}, [])
 
 	return (
-		<div className='cocktailcard shadow'>
+		<div className='card shadow'>
 			<div className='cc-title'>{drink.strDrink}</div>
 			<div className='cc-title'>
 				<img
@@ -89,7 +89,7 @@ const CocktailCard = () => {
 			</div>
 			<div className='cc-body'>
 				<h4>How to mix:</h4>
-				{drink.strInstructions}
+				<p>{drink.strInstructions}</p>
 			</div>
 		</div>
 	)
