@@ -5,8 +5,8 @@ import 'bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './assets/components/NavBar'
 import CocktailCard from './assets/components/CocktailCard'
-import TacoCard from './assets/components/TacoCard'
-// import TestTaco from './assets/components/TestTaco'
+// import TacoCard from './assets/components/TacoCard'
+import NewTaco from './assets/components/NewTaco'
 import Ron from './assets/components/Ron'
 
 class App extends React.Component {
@@ -18,8 +18,7 @@ class App extends React.Component {
 				<Ron />
 				<CocktailCard />
 				<Ron />
-				<TacoCard />
-				<Ron />
+				<NewTaco />
 			</>
 		)
 	}
