@@ -37,25 +37,26 @@ const NewTaco = () => {
 				<ul className='t-ul'>
 					{console.log('taco is', taco)}
 					{console.log('taco.ingredientLines is', taco.ingredientLines)}
+					{console.log('typeOf =', typeof taco.ingredientLines)}
 					{/* {console.log('taco.ingredients is', taco.ingredients)} */}
 					{/* {console.log('taco.ingredientLines[0] is', taco.ingredientLines[0])} */}
 					{/* <li>{JSON.stringify(taco.ingredients)}</li> */}
-					<li>{taco.ingredientLines}</li>
-					{/* <li>{taco.ingredientLines[0]}</li>
-					<li>{taco.ingredientLines[1]}</li>
-					<li>{taco.ingredientLines[2]}</li>
-					<li>{taco.ingredientLines[3]}</li>
-					<li>{taco.ingredientLines[4]}</li>
-					<li>{taco.ingredientLines[5]}</li>
-					<li>{taco.ingredientLines[6]}</li>
-					<li>{taco.ingredientLines[7]}</li>
-					<li>{taco.ingredientLines[8]}</li>
-					<li>{taco.ingredientLines[9]}</li>
-					<li>{taco.ingredientLines[10]}</li>
-					<li>{taco.ingredientLines[11]}</li>
-					<li>{taco.ingredientLines[12]}</li>
-					<li>{taco.ingredientLines[13]}</li>
-					<li>{taco.ingredientLines[14]}</li> */}
+					{/* <li>{taco.ingredientLines}</li> */}
+					<li>{taco.ingredientLines?.[0]}</li>
+					<li>{taco.ingredientLines?.[1]}</li>
+					<li>{taco.ingredientLines?.[2]}</li>
+					<li>{taco.ingredientLines?.[3]}</li>
+					<li>{taco.ingredientLines?.[4]}</li>
+					<li>{taco.ingredientLines?.[5]}</li>
+					<li>{taco.ingredientLines?.[6]}</li>
+					<li>{taco.ingredientLines?.[7]}</li>
+					<li>{taco.ingredientLines?.[8]}</li>
+					<li>{taco.ingredientLines?.[9]}</li>
+					<li>{taco.ingredientLines?.[10]}</li>
+					<li>{taco.ingredientLines?.[11]}</li>
+					<li>{taco.ingredientLines?.[12]}</li>
+					<li>{taco.ingredientLines?.[13]}</li>
+					<li>{taco.ingredientLines?.[14]}</li>
 				</ul>
 			</div>
 		</div>

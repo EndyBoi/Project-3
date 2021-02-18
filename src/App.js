@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader/root'
 import { Switch, Route } from 'react-router-dom'
 import 'bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css'
-import NavBar from './assets/components/NavBar'
+// import NavBar from './assets/components/NavBar'
 import CocktailCard from './assets/components/CocktailCard'
 // import TacoCard from './assets/components/TacoCard'
 import NewTaco from './assets/components/NewTaco'
@@ -14,7 +14,7 @@ class App extends React.Component {
 		const { name } = this.props
 		return (
 			<>
-				<NavBar />
+				{/* <NavBar /> */}
 				<Ron />
 				<CocktailCard />
 				<Ron />
