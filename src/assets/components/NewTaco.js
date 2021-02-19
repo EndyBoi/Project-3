@@ -17,13 +17,9 @@ const NewTaco = () => {
 			)
 			.then((res) => {
 				let rand = Math.floor(Math.random() * res.data.hits.length)
-				console.log(rand)
-				console.log('setTaco =', res.data.hits[rand].recipe)
 				setTaco(res.data.hits[rand].recipe)
 			})
 	}, [])
-
-	// console.log(JSON.stringify(taco.ingredientLines).split(','))
 
 	return (
 		<div className='card shadow'>
@@ -35,13 +31,6 @@ const NewTaco = () => {
 			</div>
 			<div className='t-ingr'>
 				<ul className='t-ul'>
-					{console.log('taco is', taco)}
-					{console.log('taco.ingredientLines is', taco.ingredientLines)}
-					{console.log('typeOf =', typeof taco.ingredientLines)}
-					{/* {console.log('taco.ingredients is', taco.ingredients)} */}
-					{/* {console.log('taco.ingredientLines[0] is', taco.ingredientLines[0])} */}
-					{/* <li>{JSON.stringify(taco.ingredients)}</li> */}
-					{/* <li>{taco.ingredientLines}</li> */}
 					<li>{taco.ingredientLines?.[0]}</li>
 					<li>{taco.ingredientLines?.[1]}</li>
 					<li>{taco.ingredientLines?.[2]}</li>

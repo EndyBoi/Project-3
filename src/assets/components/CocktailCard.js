@@ -8,7 +8,6 @@ const CocktailCard = () => {
 		axios
 			.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
 			.then((res) => {
-				// console.log(res.data.drinks[0])
 				setDrink(res.data.drinks[0])
 			})
 	}, [])
